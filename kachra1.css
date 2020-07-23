@@ -1,0 +1,149 @@
+body.main{
+	background-size: 100% auto;
+	/*background-repeat: no-repeat;*/
+	position: static;
+	color: white;
+	animation-name: back;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+/*	animation: back 1s linear 0s 1 forwards;*/
+}
+body{
+	position: static;
+	color: white;
+	/*background-image: url("background-image.jpg");*/
+	background-size: 100% auto;
+	font-size: 18;
+	animation: rest 0.5s linear 0s 1 forwards;
+}
+
+@keyframes rest{
+	0%{background-color: #131718;}
+	50%{background-color: #161616;}
+	100%{background-image: url("background-image.jpg");}
+}
+
+li{
+	font-size: 20px;
+}
+
+@keyframes back{
+	0%{background-color: #131718;}
+	50%{background-color: #161616;}
+	100%{background-image: url("background-image.jpg");}
+}
+
+.content{
+	/*background-color: black;*/
+	/*border-radius: 15px;*/
+	font-size: 50px;
+}
+#myPic{
+    width: auto;
+    height: 30%;
+    /*border-radius: 50px;*/
+}
+ol{
+	max-width: 90%;
+}
+ol li img{
+	max-width:80%;
+	height: auto;
+	text-align: center;
+}
+
+/*Contact Me Form*/
+
+.bout{
+	max-width: 60%;
+	/*font-size: 2vw;*/
+}
+
+@media screen and (min-width: 746px){
+	.bout{
+		font-size: 18;
+	}
+}
+
+@media screen and (max-width: 745px){
+	.bout{
+		font-size: 12;
+	}
+}
+
+      div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #eee;
+      }
+form {
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.7); 
+      max-width: 40%;
+      }
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      }
+      .checkbox a {
+      color: #26a9e0;
+      }
+      .checkbox a:hover {
+      color: #85d6de;
+      }
+button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: #26a9e0; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button {
+      width: 100%;
+      }
+      button:hover{
+      background: #85d6de;
+      }
+      @media (min-width: 568px) {
+      html, body {
+      height: 100%;
+      }
+      form {
+      flex: 1;
+      height: auto;
+      }
+      }
